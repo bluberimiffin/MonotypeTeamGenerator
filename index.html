@@ -1,0 +1,58 @@
+<!--
+  Andre Casiano
+  CSE 154 AC
+  4 May 2022
+  index.html generates a team of pokemon that share a type selected by the user, and the team
+  will be displayed on the screen.The user selects the type the pokemon will share using the
+  dropdown list, and clicks submit everytime they want to generate a team. Previous teams will
+  dissapear when submit is clicked, so only one team will be displayed at a time.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Monotype Team Creator</title>
+    <script src="index.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Monotype Team Generator!</h1>
+      <h2>Become the Gym Leader You've Always Wanted to Be!</h2>
+    </header>
+    <main>
+      <h2>Choose your Type!</h2>
+      <select id="type-list">
+        <option value="normal">Normal</option>
+        <option value="poison">Poison</option>
+        <option value="fairy">Fairy</option>
+        <option value="dragon">Dragon</option>
+        <option value="fire">Fire</option>
+        <option value="water">Water</option>
+        <option value="grass">Grass</option>
+        <option value="flying">Flying</option>
+        <option value="ground">Ground</option>
+        <option value="ice">Ice</option>
+        <option value="rock">Rock</option>
+        <option value="bug">Bug</option>
+        <option value="psychic">Psychic</option>
+        <option value="ghost">Ghost</option>
+        <option value="dark">Dark</option>
+        <option value="electric">Electric</option>
+        <option value="fighting">Fighting</option>
+        <option value="steel">Steel</option>
+      </select>
+      <input type="submit">
+      <h2 id="error" class="hidden">Something wrong happened!
+        Click submit again or refresh the page.</h2>
+      <h2 id="team-status" class="hidden">Here's Your Team!</h2>
+      <section id="team-display">
+      </section>
+    </main>
+    <footer>
+      <p>All pictures and data come from the pokeAPI:
+        <a href='https://pokeapi.co/'>https://pokeapi.co/</a></p>
+      <p>Created by Andre Casiano for CSE 154</p>
+    </footer>
+  </body>
+</html>

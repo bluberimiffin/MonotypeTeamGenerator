@@ -1,0 +1,76 @@
+/*
+ * Andre Casiano
+ * CSE 154 AC
+ * 4 May 2022
+ * style.css styles the Monotype Team Generator page. The header has a rainbow shadow, and
+ * the font is "Press Start 2P" from Google Fonts. When a team is generated, each pokemon on the
+ * team gets a little card with its sprite on the left, and characteristics on the right.
+ */
+
+h1, h2, h3, p, li, select, input {
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+#team-status {
+  color: purple;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+select, input {
+  width: 200px;
+  height: 40px;
+}
+
+#team-display, .team-slot {
+  display: flex;
+}
+
+#team-display {
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.team-slot {
+  width: 500px;
+  flex-direction: row;
+  border-style: outset;
+  margin: 5px 5px 5px 5px;
+}
+
+.team-slot div {
+  display: flex;
+  flex-direction: column;
+  margin: 3px 3px 3px 3px;
+}
+
+.team-slot img {
+  width: 200px;
+  height: 200px;
+}
+
+/*
+code modified from this post: https://welearncode.com/rainbow-text/
+*/
+h1 {
+  margin-bottom: 30px;
+  margin-top: 10px;
+  text-shadow:
+    -4px 4px #ef3550,
+    -3px 3px #f48fb1,
+    -5px 5px #7e57c2,
+    -8px 8px #2196f3,
+    -10px 10px #26c6da,
+    -12px 12px #43a047,
+    -14px 14px #eeff41,
+    -16px 16px #f9a825,
+    -18px 18px #ff5722;
+}
